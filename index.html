@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos Abt Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #0b0b0e; color: #f3f4f6; overflow-x: hidden; }
+        .gaming-font { font-family: 'Orbitron', sans-serif; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 20px rgba(249,115,22,0.3); } 50% { box-shadow: 0 0 40px rgba(249,115,22,0.6); } }
+        @keyframes bgGradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        .animated-bg { background: linear-gradient(-45deg, #0b0b0e, #1a0f0a, #110703, #0b0b0e); background-size: 400% 400%; animation: bgGradient 15s ease infinite; }
+        .glass-card { background: rgba(26,15,10,0.7); backdrop-filter: blur(16px); border: 2px solid rgba(249,115,22,0.4); border-radius: 2rem; animation: float 6s ease-in-out infinite, pulseGlow 4s ease-in-out infinite; transition: 0.4s; }
+        .glass-card:hover { transform: translateY(-6px) scale(1.02); border-color: rgba(251,146,60,0.9); box-shadow: 0 0 50px rgba(249,115,22,0.6); }
+        .link-btn { transition: 0.3s; }
+        .link-btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="animated-bg min-h-screen flex flex-col items-center justify-center p-4 selection:bg-orange-500 selection:text-white">
+
+    <main class="w-full max-w-xl flex flex-col gap-8 z-10">
+
+        <div class="glass-card text-center p-8 relative mt-4">
+            
+            <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-amber-600 px-5 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-black border border-orange-300 shadow">
+                <i class="fa-solid fa-crown mr-1"></i> p4troL's Profile
+            </div>
+
+            <h1 class="gaming-font text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-yellow-400 mb-4">
+                Slm
+            </h1>
+
+            <div class="space-y-3 text-sm text-gray-300">
+                
+                <p class="font-semibold text-white bg-orange-950/40 border border-orange-500/30 p-3 rounded-xl">
+                    <i class="fa-solid fa-gamepad text-orange-400 mr-2"></i> • Hi I'm Görkem, I'm 15yo kiddo and a skilled cs2 player. <br>
+                    • I'm also an ex-professional TF2 player. <br>
+                    • Speaks over many languages<br>
+                    • Monophobic<br>
+                </p>
+                
+                <div class="grid grid-cols-2 gap-3">
+                    
+                    <div class="bg-black/40 border border-orange-500/20 p-3 rounded-xl flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-orange-500"></i>
+                        <span><strong>Rank:</strong> Master Guardian II</span>
+                    </div>
+                    
+                    <div class="bg-black/40 border border-orange-500/20 p-3 rounded-xl flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-crosshairs text-orange-400"></i>
+                        <span><strong>Faceit:</strong> 942 Rating</span>
+                    </div>
+                    
+                </div>
+
+                <p class="text-xs text-gray-400 pt-2 border-t border-orange-500/20">
+                    <strong class="text-orange-400">My Fav Games:</strong> CS2, Valorant, Roblox, VR games and etc...
+                </p>
+                
+            </div>
+            
+        </div>
+
+        <div class="glass-card text-center p-8">
+            
+            <h2 class="gaming-font text-2xl font-extrabold text-orange-400 mb-6 uppercase flex items-center justify-center gap-2">
+                <i class="fa-solid fa-link text-orange-500"></i> Links
+            </h2>
+
+            <div class="flex flex-col gap-3">
+                
+                <a href="https://steamcommunity.com/id/realp4rtol/" target="_blank" class="link-btn flex items-center justify-center gap-3 bg-gradient-to-r from-orange-600 to-amber-600 font-bold py-3 px-6 rounded-xl shadow border border-orange-400/40">
+                    <i class="fa-brands fa-steam text-xl"></i> Steam
+                </a>
+                
+                <a href="https://www.faceit.com/en/players/p4troL" target="_blank" class="link-btn flex items-center justify-center gap-3 bg-gradient-to-r from-orange-700 to-orange-800 font-bold py-3 px-6 rounded-xl shadow border border-orange-500/40">
+                    <i class="fa-solid fa-trophy text-orange-400 text-xl"></i> Faceit
+                </a>
+                
+                <a href="https://www.youtube.com/@by_p4troL" target="_blank" class="link-btn flex items-center justify-center gap-3 bg-gradient-to-r from-red-700 to-orange-700 font-bold py-3 px-6 rounded-xl shadow border border-red-500/40">
+                    <i class="fa-brands fa-youtube text-xl"></i> Youtube
+                </a>
+                
+                <a href="https://csstats.gg/player/76561199038306142" target="_blank" class="link-btn flex items-center justify-center gap-3 bg-gradient-to-r from-zinc-800 to-orange-900 font-bold py-3 px-6 rounded-xl shadow border border-orange-500/40">
+                    <i class="fa-solid fa-chart-line text-orange-400 text-xl"></i> Csstats
+                </a>
+                
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <footer class="mt-8 text-center text-xs text-gray-500 z-10 font-mono">
+        &copy; 2026 Görkem "p4troL" Ordu • All Rights Reserved
+    </footer>
+
+</body>
+</html>
